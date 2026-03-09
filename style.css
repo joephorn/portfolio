@@ -277,6 +277,21 @@ img {
   max-width: 100%;
 }
 
+.poster-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--main-padding);
+}
+
+.poster-row img {
+  flex: 1 1 calc((100% - (2 * var(--main-padding))) / 3);
+  max-width: calc((100% - (2 * var(--main-padding))) / 3);
+}
+
+.poster-row .description {
+  flex: 0 0 100%;
+}
+
 #about-video-container {
   margin: 16px 0 0 0;
   right: var(--main-padding);
